@@ -1,0 +1,211 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+
+}
+.main{
+        width: 90%;
+        height: 60vh;
+        background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40));
+        position: center;
+        padding: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.back-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo {
+
+    cursor: pointer;
+    color: rgb(226, 70, 43);
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20px; 
+    height: 50px;
+    width: 250px;
+    display: inline-block;
+    overflow: hidden;
+  }
+.logo:before {
+    content: "";
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    background: conic-gradient(
+      #fe9000,
+      #fff020,
+      #3edf4b,
+      #3363ff,
+      #b102b7,
+      #fd004c
+);
+    left:-25%;
+    top: -25%;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin {
+    100% {
+      transform: rotate(-360deg);
+    }
+}
+  
+.logo:after {
+    content: "HEALTHINSIGHT";
+    position: absolute;
+    background-color: whitesmoke;
+    height: 93%;
+    width: 99%;
+    top: 3.5%;
+    left: 3.5%;
+    border-radius: 5px;
+    font-family: 'Poppins',Arial;
+    color:#000;
+    font-size: 20px;
+    letter-spacing: 5px;
+    display: grid;
+    place-items: center;
+}
+  
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px;
+}
+li a:hover{
+    background: #fff;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: #000;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    fornt-family:'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border : 2px solid black;
+    margin-top:12px; 
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 60px;
+    background: skyblue;
+    border: 5px solid skyblue;
+    margin-top:13px;
+    color:black;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 2000px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    color: black;
+    font-size: 50px;
+    padding-left:10px;
+    margin-top: 5%;
+    letter-spacing:2px;
+}
+.cn{
+    width: 200px;
+    height: 40px;
+    background: skyblue;
+    border: none;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+    }
+.cn:hover{
+background-color: #fff;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: skyblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
